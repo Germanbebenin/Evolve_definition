@@ -1,0 +1,27 @@
+http://ec2-3-136-87-177.us-east-2.compute.amazonaws.com/check?contract_address=0xd07dc4262bcdbf85190c01c996b4c06a461d2430&nft_id=507779
+Запрашивает скор картины.
+Возвращает сам скор и n ближайших похожих картин.
+
+http://ec2-3-136-87-177.us-east-2.compute.amazonaws.com/register_new_image?contract_address=0xd07dc4262bcdbf85190c01c996b4c06a461d2430&nft_id=507779
+Регистрирует картину вне очереди.
+
+http://ec2-3-136-87-177.us-east-2.compute.amazonaws.com/check_registered_image?contract_address=0xd07dc4262bcdbf85190c01c996b4c06a461d2430&nft_id=507779
+Проверяет, проиндексирована ли уже картина.
+
+http://ec2-3-136-87-177.us-east-2.compute.amazonaws.com/rejected_images_by_nn
+Показать картины, которые отклонены нейронкой
+
+http://ec2-3-136-87-177.us-east-2.compute.amazonaws.com/rejected_images_by_ipfs
+Показать картины, которые отлонены ipfs
+
+http://ec2-3-136-87-177.us-east-2.compute.amazonaws.com/registered_images
+Показать картины, проиндексированные нейронкой
+
+http://ec2-3-136-87-177.us-east-2.compute.amazonaws.com/statistics
+Общая статистика
+found_images_count- количество найденых картин в эфире
+precessed_images_count - количество скачанных картин с ipfs
+registered_images_count - количество картин, проиндексированных нейронкой
+rejected_by_ipfs_images_count - количество картин, отклоненных ipfs
+rejected_by_nn_images_count - количество картин, отклоненных нейронкой
+is_completed - загружены ли все актуальные картины
